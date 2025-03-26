@@ -54,9 +54,8 @@ Here are some ideas to get you started:
 
 ## ⚡ Stats ⚡
 
-<img width=390 src="https://streak-stats.demolab.com/?user=zandercodes&count_private=true&theme=vue-dark&hide_border=true&border_radius=10&card_width=390&card_height=150" alt="streak stats"/>
 <img width=390 src="https://github-readme-stats.vercel.app/api?username=zandercodes&count_private=true&show_icons=true&theme=vue-dark&rank_icon=github&hide_border=true&border_radius=10&card_height=160" alt="readme stats" />
 <br />
-<img width=325 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zandercodes&hide=HTML&langs_count=8&layout=compact&theme=vue-dark&hide_border=true&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
+<img width=325 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zandercodes&hide=HTML&langs_count=8&layout=compact&theme=vue-dark&hide_border=true&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=zandercodes" alt="top langs" />
 
 </div>
