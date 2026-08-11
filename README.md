@@ -54,8 +54,34 @@ Here are some ideas to get you started:
 
 ## ⚡ Stats ⚡
 
-<img width=390 src="https://github-readme-stats.vercel.app/api?username=zandercodes&count_private=true&show_icons=true&theme=vue-dark&rank_icon=github&hide_border=true&border_radius=10&card_height=160" alt="readme stats" />
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/zandercodes/zandercodes/profile/stats-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/zandercodes/zandercodes/profile/stats.svg"
+  />
+  <img
+    alt="zandercodes github stats"
+    src="https://raw.githubusercontent.com/zandercodes/zandercodes/profile/stats.svg"
+  />
+</picture>
 <br />
-<img width=325 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zandercodes&hide=HTML&langs_count=8&layout=compact&theme=vue-dark&hide_border=true&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=zandercodes" alt="top langs" />
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/zandercodes/zandercodes/profile/top-langs-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/zandercodes/zandercodes/profile/top-langs.svg"
+  />
+  <img
+    alt="zandercodes github top langs"
+    src="https://raw.githubusercontent.com/zandercodes/zandercodes/profile/top-langs.svg"
+  />
+</picture>
 
 </div>
