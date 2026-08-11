@@ -54,7 +54,7 @@ jobs:
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
-          cards: stats
+          card: stats
           options: username=${{ github.repository_owner }}&theme=vue&show_icons=true&rank_icon=github&hide_border=true&border_radius=10&card_height=160&exclude_repo=zandercodes
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -62,7 +62,7 @@ jobs:
       - name: Generate stats card (Dark Theme)
         uses: stats-organization/github-readme-stats-action@v2
         with:
-          cards: stats
+          card: stats
           options: username=${{ github.repository_owner }}&theme=vue-dark&show_icons=true&rank_icon=github&hide_border=true&border_radius=10&card_height=160&exclude_repo=${{ github.repository_owner }}
           path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
