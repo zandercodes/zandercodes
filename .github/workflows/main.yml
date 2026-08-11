@@ -50,3 +50,44 @@ jobs:
           commit_message: Update snake animations
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          cards: stats
+          options: username=${{ github.repository_owner }}&theme=vue&show_icons=true&rank_icon=github&hide_border=true&border_radius=10&card_height=160&exclude_repo=zandercodes
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate stats card (Dark Theme)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          cards: stats
+          options: username=${{ github.repository_owner }}&theme=vue-dark&show_icons=true&rank_icon=github&hide_border=true&border_radius=10&card_height=160&exclude_repo=${{ github.repository_owner }}
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&hide=HTML&langs_count=8&layout=compact&theme=vue&hide_border=true&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=${{ github.repository_owner }}
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card (Dark Theme)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&hide=HTML&langs_count=8&layout=compact&theme=vue-dark&hide_border=true&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=${{ github.repository_owner }}
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push new files to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: profile
+          build_dir: profile
+          commit_message: Update profile stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
